@@ -9,21 +9,7 @@
   <body>
     <h1>Bat Ball Stump Game</h1>
     <button
-      onclick="
-   
-    let randomNumber = Math.random() * 3;
-    let computerChoice;
-    if(randomNumber>0 && randomNumber <= 1){
-       computerChoice = 'Bat'
-      // console.log('computer Choice  bat')
-    }else if(randomNumber > 1 && randomNumber <= 2){
-       computerChoice = 'Ball'
-      
-    }else{
-       computerChoice = 'Stump'
-      
-    }
-   
+      onclick="generateComputerChoice();
 
   let resultMsg;
   if (computerChoice === 'Ball'){
@@ -42,24 +28,21 @@ alert(`You have chossen Bat.Computer choise is ${computerChoice} and ${resultMsg
       Bat
     </button>
 
-
-
-
     <button
-      onclick="
+      onclick="generateComputerChoice();
    
-    randomNumber = Math.random() * 3;
+    // randomNumber = Math.random() * 3;
     // computerChoice;
-    if(randomNumber>0 && randomNumber <= 1){
-       computerChoice = 'Bat'
-      // console.log('computer Choice  bat')
-    }else if(randomNumber > 1 && randomNumber <= 2){
-       computerChoice = 'Ball'
+    // if(randomNumber>0 && randomNumber <= 1){
+    //    computerChoice = 'Bat'
+    //   // console.log('computer Choice  bat')
+    // }else if(randomNumber > 1 && randomNumber <= 2){
+    //    computerChoice = 'Ball'
       
-    }else{
-       computerChoice = 'Stump'
+    // }else{
+    //    computerChoice = 'Stump'
       
-    }
+    // }
    
 
   // resultMsg;
@@ -79,23 +62,21 @@ alert(`You have chossen Ball. Computer choise is ${computerChoice} and ${resultM
       Ball
     </button>
 
-
-
     <button
-    onclick="
+      onclick="generateComputerChoice();
    
-     randomNumber = Math.random() * 3;
+    //  randomNumber = Math.random() * 3;
     //  computerChoice;
-    if(randomNumber>0 && randomNumber <= 1){
-       computerChoice = 'Bat'
-      // console.log('computer Choice  bat')
-    }else if(randomNumber > 1 && randomNumber <= 2){
-       computerChoice = 'Ball'
+    // if(randomNumber>0 && randomNumber <= 1){
+    //    computerChoice = 'Bat'
+    //   // console.log('computer Choice  bat')
+    // }else if(randomNumber > 1 && randomNumber <= 2){
+    //    computerChoice = 'Ball'
       
-    }else{
-       computerChoice = 'Stump'
+    // }else{
+    //    computerChoice = 'Stump'
       
-    }
+    // }
    
 
   //  resultMsg;
@@ -111,6 +92,23 @@ alert(`You have chossen Ball. Computer choise is ${computerChoice} and ${resultM
 alert(`You have chossen Stump.Computer choise is ${computerChoice} and ${resultMsg}`);
 
     "
-    >Stump</button>
+    >
+      Stump
+    </button>
+    <script>
+       let computerChoice;
+      function generateComputerChoice() {
+        let randomNumber = Math.random() * 3;
+       
+        if (randomNumber > 0 && randomNumber <= 1) {
+          computerChoice = "Bat";
+          // console.log('computer Choice  bat')
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+          computerChoice = "Ball";
+        } else {
+          computerChoice = "Stump";
+        }
+      }
+    </script>
   </body>
 </html>
