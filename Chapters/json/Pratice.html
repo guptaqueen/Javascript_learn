@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratice-Dom</title>
+  </head>
+  <body>
+    <h3 class="greeting"></h3>
+    <button id="my-button" onclick="buttonPressed">0</button>
+    <script>
+function buttonPressed(){
+  console.log('pressed');
+  let button = document.querySelector('#my-button');
+  onOfTimeClicked++;
+  // button.innerText = 
+}
+
+
+
+
+
+    function  doGreeting(personName = ('Dear') ){
+
+
+      let date = new Date();
+      let hours = date.getHours();
+      // console.log(hour);
+      // console.log(date.getHours());
+      let hour= document.querySelector('.greeting');
+
+      if (hours>5 && hours<12){
+        hour.innerText = `Good Morning ${personName}`;
+      } else if( hours >12 && hours<18){
+        hour.innerText = `Good afternoon ${personName}`;
+      }else{
+        hour.innerText = `Good Night ${personName}`;
+      }
+      }
+      doGreeting('Praveen');
+
+    </script>
+  </body>
+</html>
