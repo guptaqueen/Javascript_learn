@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance Function</title>
+  </head>
+  <body>
+<button id="my-button" >Click me</button>
+
+    <script>
+let buttonElement = document.querySelector('#my-button');
+let behaviour = event =>console.log('I am clicked')
+buttonElement.addEventListener('click',behaviour)
+;
+ let printDate = event => console.log(new Date());
+ buttonElement.addEventListener('click',printDate);
+ buttonElement.removeEventListener('click',behaviour);
+
+// event =>console.log('I am clicked'))
+
+
+      // let sum = function (num1, num2) {
+      //   return num1 + num2;
+      // };
+      // console.log(sum(4,5))
+
+      // let sum = (num1,num2) =>{
+      //   return num1+num2;
+      // }
+      // console.log (sum(4,3));
+
+
+      // let square = num =>num*num;
+      
+      // console.log(square(5));
+
+
+      //setTimeout
+      // let alarm = () =>
+      //   console.log('Good Morining');
+     
+      // setTimeout(alarm,5000);
+      // console.log('utha jau');
+
+
+
+      //setinterval
+    //   let alarm = () => console.log(`Good Moring  ${new Date()}`);
+    // let intervalId = setInterval (alarm ,1000);
+    // clearInterval(intervalId);
+
+
+
+
+    </script>
+  </body>
+</html>
