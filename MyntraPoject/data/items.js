@@ -11,6 +11,8 @@ const items = [
       current_price:606,
       original_price:1045,
       discount:42,
+      return_period:14,
+      delivery_date:'10 Oct 2025'
   },
 
   {
@@ -25,6 +27,8 @@ const items = [
       current_price:606,
       original_price:1045,
       discount:42,
+      return_period:14,
+      delivery_date:'10 Oct 2025'
   },
 
   {
@@ -39,6 +43,8 @@ const items = [
       current_price:606,
       original_price:1045,
       discount:42,
+      return_period:14,
+      delivery_date:'10 Oct 2025'
   },
 
   {
@@ -53,6 +59,8 @@ const items = [
       current_price:606,
       original_price:1045,
       discount:42,
+      return_period:14,
+      delivery_date:'10 Oct 2025'
   },
 
   {
@@ -67,6 +75,8 @@ const items = [
       current_price:606,
       original_price:1045,
       discount:42,
+      return_period:14,
+      delivery_date:'10 Oct 2025'
   },
   {
     id:'006',
@@ -80,6 +90,8 @@ const items = [
       current_price:606,
       original_price:1045,
       discount:42,
+      return_period:14,
+      delivery_date:'10 Oct 2025'
   },
   {
     id:'007',
@@ -93,6 +105,8 @@ const items = [
       current_price:606,
       original_price:1045,
       discount:42,
+      return_period:14,
+      delivery_date:'10 Oct 2025'
   }
 
 
